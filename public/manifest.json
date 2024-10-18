@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest",
+  "name": "Rainbow JSON",
+  "manifest_version": 3,
+  "description": "Making JSON easier to read in the browser",
+  "version": "0.0.1",
+  "icons": {
+    "16": "logo@16px.png",
+    "32": "logo@32px.png",
+    "48": "logo@48px.png",
+    "128": "logo@128px.png"
+  },
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "options.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "**/*.js",
+        "**/*.css"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content-script.js"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "*://*/*"
+  ],
+  "permissions": []
+}
