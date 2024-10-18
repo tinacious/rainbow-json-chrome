@@ -1,7 +1,7 @@
 import "./app.css";
 import App from "./App.svelte";
 
-let parsedJson = "";
+let parsedJson = {};
 
 try {
   parsedJson = JSON.parse(document.body.innerText);
@@ -13,7 +13,7 @@ const app = parsedJson
   ? new App({
     target: document.body,
     props: {
-      jsonString: parsedJson,
+      jsonObject: parsedJson,
     },
   })
   : null;

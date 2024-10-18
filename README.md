@@ -5,7 +5,7 @@
 - [How it works](#how-it-works)
 - [Features](#features)
 - [Related themes](#related-themes)
-- [Tools and Libraries](#tools-and-libraries)
+- [Tools, Libraries and other credits](#tools-libraries-and-other-credits)
 - [Screenshots](#screenshots)
   - [Dark mode](#dark-mode)
   - [Light mode](#light-mode)
@@ -39,7 +39,7 @@ If you like this extension, you might like my code editor themes:
 - [Sublime Text](https://github.com/tinacious/sublime-tinacious-design-syntax)
 
 
-## Tools and Libraries
+## Tools, Libraries and other credits
 
 - [TypeScript](https://www.typescriptlang.org/)
 - [Svelte](https://svelte.dev/)
@@ -48,6 +48,7 @@ If you like this extension, you might like my code editor themes:
 - [postcss](https://postcss.org/)
 - Ionicons 5 SVG icons ([icons](https://ionic.io/ionicons) using [react-icons Figma plugin](https://www.figma.com/community/plugin/921172243620367846/import-react-icons))
 - [Figma](https://www.figma.com/)
+- [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) is the font used
 
 
 ## Screenshots
