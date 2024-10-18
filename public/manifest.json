@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/chrome-manifest",
-  "name": "Rainbow JSON",
+  "name": "Rainbow JSON Viewer",
   "manifest_version": 3,
   "description": "Making JSON easier to read in the browser",
   "version": "0.0.1",

@@ -3,8 +3,8 @@ const isJsonDocument = (): boolean => {
 }
 
 const injectJsonViewer = () => {
-  // Set dark mode
-  document.querySelector('html')?.setAttribute('class', 'dark')
+  // Set manual dark mode if applicable - Note: this currently uses the system detection
+  // document.querySelector('html')?.setAttribute('class', 'dark')
 
   // Load CSS
   const cssFilePath = chrome.runtime.getURL('/main.css')
