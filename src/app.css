@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color-scheme: light dark;
+
+
+html.dark {
+  color-scheme: dark;
 }
 
 body {
+  font-size: 100%;
   font-family: 'Source Code Pro', 'Cascadia Code', 'IBM Plex Mono', 'MonoLisa', 'Consolas', monospace;
   /* @apply bg-td_grey_1250 dark:bg-td_grey_100 text-black dark:text-white; */
   @apply bg-td_grey_1250 dark:bg-td_grey_100 text-td_grey_100 dark:text-td_grey_1250;
@@ -29,7 +32,8 @@ body {
 }
 
 .token-string {
-  @apply text-td_grey_400 dark:text-td_grey_1000;
+  @apply text-td_grey_400 dark:text-white;
+  /* @apply text-td_grey_400 dark:text-td_grey_1000; */
 }
 
 .colon {
@@ -37,7 +41,7 @@ body {
 }
 
 .parens {
-  @apply font-bold dark:text-td_grey_1100 text-td_grey_400;
+  @apply font-bold dark:text-td_grey_1100/80 text-td_grey_400;
 }
 
 .json-prop {
