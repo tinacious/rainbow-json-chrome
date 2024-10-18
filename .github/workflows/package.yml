@@ -1,0 +1,22 @@
+name: Package Chrome extension
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run:
+          npm ci;
+          npm run build;
+          zip -r rainbow-json.zip rainbow-json-chrome/*;
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: rainbow-json
+          path: rainbow-json.zip
