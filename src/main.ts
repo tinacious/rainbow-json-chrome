@@ -7,10 +7,7 @@ try {
   parsedJson = JSON.parse(document.body.innerText);
   document.body.innerHTML = ''
 } catch (e) {
-  console.log("Not JSON", e);
 }
-
-console.log("JSON to render", parsedJson);
 
 const app = parsedJson
   ? new App({
