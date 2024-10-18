@@ -9,6 +9,7 @@
 - [Screenshots](#screenshots)
   - [Dark mode](#dark-mode)
   - [Light mode](#light-mode)
+  - [External link support](#external-link-support)
   - [OpenAPI link support](#openapi-link-support)
 - [Development](#development)
 
@@ -58,9 +59,13 @@ If you like this extension, you might like my code editor themes:
 
 ![](./screenshots/light-mode.png)
 
+### External link support
+
+![](./screenshots/links-external.png)
+
 ### OpenAPI link support
 
-![](./screenshots/openapi-links.png)
+![](./screenshots/links-openapi.png)
 
 
 ## Development
