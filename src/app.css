@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-html.dark {
-  color-scheme: dark;
+:root {
+  color-scheme: light dark;
 }
+
+/* For manual dark mode */
+/* html.dark {
+  color-scheme: dark;
+} */
 
 body {
   font-size: 100%;
   font-family: 'IBM Plex Mono', 'Source Code Pro', 'Cascadia Code', 'MonoLisa', 'Consolas', monospace;
   /* @apply bg-td_grey_1250 dark:bg-td_grey_100 text-black dark:text-white; */
-  @apply bg-td_grey_1250 dark:bg-td_grey_100 text-td_grey_100 dark:text-td_grey_1250;
+
+  @apply text-td_grey_100 dark:text-td_grey_1250;
+  /* @apply bg-td_grey_1250 dark:bg-td_grey_100; */
+  @apply bg-gradient-to-b dark:bg-[#291135] dark:from-td_grey_200 bg-[#FBF7FD] from-td_grey_1200 bg-fixed;
 }
 
 .brace {

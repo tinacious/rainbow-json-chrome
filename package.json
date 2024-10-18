@@ -4,12 +4,16 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port 5090",
-    "build": "vite build --port 5090",
+    "dev": "vite --port 5090 -c vite.config-content.js",
+    "build": "rm -rf rainbow-json-chrome && npm run build:content && npm run build:main && npm run build:clean-manifest",
+    "build:main": "vite build -c vite.config-main.js",
+    "build:content": "vite build -c vite.config-content.js",
+    "build:clean-manifest": "node scripts/clean_manifest.cjs",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.272",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
     "@tsconfig/svelte": "^5.0.4",
     "autoprefixer": "^10.4.20",

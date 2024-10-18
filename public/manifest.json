@@ -5,20 +5,16 @@
   "description": "Making JSON easier to read in the browser",
   "version": "0.0.1",
   "icons": {
-    "16": "logo@16px.png",
-    "32": "logo@32px.png",
-    "48": "logo@48px.png",
-    "128": "logo@128px.png"
-  },
-  "options_ui": {
-    "open_in_tab": true,
-    "page": "options.html"
+    "16": "logo-rainbow-json@16px.png",
+    "32": "logo-rainbow-json@32px.png",
+    "48": "logo-rainbow-json@48px.png",
+    "128": "logo-rainbow-json@128px.png"
   },
   "web_accessible_resources": [
     {
       "resources": [
-        "**/*.js",
-        "**/*.css"
+        "main.js",
+        "main.css"
       ],
       "matches": [
         "<all_urls>"
