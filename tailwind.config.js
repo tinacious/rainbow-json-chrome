@@ -19,6 +19,12 @@ export default {
         td_overcast_sky: '#c8c8d5',
         td_tangerine: '#ffaa00',
         td_red: '#f10f69',
+
+        // JSON
+        td_perrywinkle: '#848fea',
+        td_coral: '#ff7086',
+        td_papaya: '#ffb070',
+
         td_grey_100: '#111116',
         td_grey_200: '#22222d',
         td_grey_300: '#333343',

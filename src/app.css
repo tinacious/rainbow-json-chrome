@@ -7,5 +7,183 @@
 }
 
 body {
-  font-family: 'Consolas', monospace;
+  font-family: 'Source Code Pro', 'Cascadia Code', 'IBM Plex Mono', 'MonoLisa', 'Consolas', monospace;
+  /* @apply bg-td_grey_1250 dark:bg-td_grey_100 text-black dark:text-white; */
+  @apply bg-td_grey_1250 dark:bg-td_grey_100 text-td_grey_100 dark:text-td_grey_1250;
+}
+
+.brace {
+  @apply text-td_purple font-bold bg-td_grey_1200/60 dark:bg-td_grey_300/60 p-[3px] rounded-md;
+}
+
+.bracket {
+  @apply text-td_purple font-bold bg-td_grey_1200/60 dark:bg-td_grey_300/60 p-[3px] rounded-md;
+}
+
+.token-number {
+  @apply text-td_tangerine font-bold;
+}
+
+.token-boolean {
+  @apply text-td_purple font-bold;
+}
+
+.token-string {
+  @apply text-td_grey_400 dark:text-td_grey_1000;
+}
+
+.colon {
+  @apply font-bold;
+}
+
+.parens {
+  @apply font-bold dark:text-td_grey_1100 text-td_grey_400;
+}
+
+.json-prop {
+  @apply font-medium;
+}
+
+.prop-level-0 {
+  @apply text-[#00CECA];
+}
+
+.prop-level-1 {
+  @apply text-[#00BFFF];
+}
+
+.prop-level-2 {
+  @apply text-[#8590EC];
+}
+
+.prop-level-3 {
+  @apply text-[#FE3698];
+}
+
+.prop-level-4 {
+  @apply text-[#FF7086];
+}
+
+.prop-level-5 {
+  @apply text-[#ffb070];
+}
+
+.prop-level-6 {
+  @apply text-[#FCCC66];
+}
+
+.prop-level-7 {
+  @apply text-[#BBCE65];
+}
+
+.prop-level-8 {
+  @apply text-[#59D065];
+}
+
+.prop-level-9 {
+  @apply text-[#00CECA];
+}
+
+.prop-level-10 {
+  @apply text-[#00BFFF];
+}
+
+.prop-level-11 {
+  @apply text-[#8590EC];
+}
+
+.prop-level-12 {
+  @apply text-[#FE3698];
+}
+
+.prop-level-13 {
+  @apply text-[#FF7086];
+}
+
+.prop-level-14 {
+  @apply text-[#ffb070];
+}
+
+.prop-level-15 {
+  @apply text-[#FCCC66];
+}
+
+.prop-level-16 {
+  @apply text-[#BBCE65];
+}
+
+.prop-level-17 {
+  @apply text-[#59D065];
+}
+
+.prop-level-18 {
+  @apply text-[#00CECA];
+}
+
+.prop-level-19 {
+  @apply text-[#00BFFF];
+}
+
+.prop-level-20 {
+  @apply text-[#8590EC];
+}
+
+.prop-level-21 {
+  @apply text-[#FE3698];
+}
+
+.prop-level-22 {
+  @apply text-[#FF7086];
+}
+
+.prop-level-23 {
+  @apply text-[#ffb070];
+}
+
+.prop-level-24 {
+  @apply text-[#FCCC66];
+}
+
+.prop-level-25 {
+  @apply text-[#BBCE65];
+}
+
+.prop-level-26 {
+  @apply text-[#59D065];
+}
+
+.prop-level-27 {
+  @apply text-[#00CECA];
+}
+
+.prop-level-28 {
+  @apply text-[#00BFFF];
+}
+
+.prop-level-29 {
+  @apply text-[#8590EC];
+}
+
+.prop-level-30 {
+  @apply text-[#FE3698];
+}
+
+.prop-level-31 {
+  @apply text-[#FF7086];
+}
+
+.prop-level-32 {
+  @apply text-[#ffb070];
+}
+
+.prop-level-33 {
+  @apply text-[#FCCC66];
+}
+
+.prop-level-34 {
+  @apply text-[#BBCE65];
+}
+
+.prop-level-35 {
+  @apply text-[#59D065];
 }
