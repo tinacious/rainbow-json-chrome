@@ -6,7 +6,7 @@
 
 <main>
   <div class="p-4">
-    <JsonTree data={jsonString} name="" isLastItem={true} level={0} />
+    <JsonTree parent="" data={jsonString} name="" isLastItem={true} level={0} />
   </div>
 </main>
 

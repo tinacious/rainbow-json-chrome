@@ -10,7 +10,7 @@ html.dark {
 
 body {
   font-size: 100%;
-  font-family: 'Source Code Pro', 'Cascadia Code', 'IBM Plex Mono', 'MonoLisa', 'Consolas', monospace;
+  font-family: 'IBM Plex Mono', 'Source Code Pro', 'Cascadia Code', 'MonoLisa', 'Consolas', monospace;
   /* @apply bg-td_grey_1250 dark:bg-td_grey_100 text-black dark:text-white; */
   @apply bg-td_grey_1250 dark:bg-td_grey_100 text-td_grey_100 dark:text-td_grey_1250;
 }

@@ -7,6 +7,7 @@
   export let name: string | number;
   export let level: number;
   export let isLastItem: boolean;
+  export let parent: string;
 
   // state
   let open: boolean = true;
@@ -22,6 +23,7 @@
 </script>
 
 <div
+  id={parent}
   class="json-tree relative px-6 py-1"
   style="margin-left: {level * marginSize}px"
 >
@@ -64,7 +66,7 @@
     {#if name && typeof name === "string"}
       <span class="parens">"</span><span
         class="json-prop prop-level-{hasNested ? level - 1 : level}"
-        >{name}</span
+        id={parent}>{name}</span
       ><span class="parens">"</span>
       <span class="colon">:</span>
     {/if}
@@ -83,6 +85,7 @@
     {#if Array.isArray(data)}
       {#each data as item, i}
         <svelte:self
+          parent=""
           isLastItem={i === data.length - 1}
           data={item}
           name={i}
@@ -93,6 +96,7 @@
       {#each Object.keys(data) as k, j}
         {#if Array.isArray(data[k])}
           <svelte:self
+            parent=""
             data={data[k]}
             isLastItem={j === Object.keys(data).length - 1}
             name={typeof k === "string" ? k : ""}
@@ -100,6 +104,7 @@
           />
         {:else if isJsonObject(data[k])}
           <svelte:self
+            parent="{parent}_{k}"
             data={data[k]}
             isLastItem={j === Object.keys(data).length - 1}
             name={k}
@@ -111,14 +116,23 @@
               style="width: {marginSize}px; height: {marginSize}px; margin-right: {marginSize}px;"
             >
               <span class="parens">"</span><span
-                class="json-prop prop-level-{level}">{k}</span
+                class="json-prop prop-level-{level}"
+                id="{parent}_{k}">{k}</span
               ><span class="parens">"</span>
               <span class="colon">:</span>
 
               {#if typeof data[k] === "string"}
-                <span class="parens">"</span><span class="token-string"
-                  >{data[k]}</span
-                ><span class="parens">"</span>
+                <span class="parens">"</span>{#if k === "$ref"}<a
+                    href={data[k].replaceAll("/", "_")}
+                    class="token-string underline">{data[k]}</a
+                  >{:else if data[k].startsWith("http")}<a
+                    href={data[k]}
+                    target="_blank"
+                    rel="nofollow noreferrer"
+                    class="token-string underline">{data[k]}</a
+                  >{:else}<span class="token-string">{data[k]}</span>{/if}<span
+                  class="parens">"</span
+                >
               {:else if typeof data[k] === "number"}
                 <span class="token-number">{data[k]}</span>
               {:else if typeof data[k] === "boolean"}
