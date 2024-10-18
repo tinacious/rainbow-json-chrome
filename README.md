@@ -31,7 +31,7 @@ The extension uses the document's content type to decide if it should style the 
 
 If you like this extension, you might like my code editor themes:
 
-- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=tinaciousdesign.theme-tinaciousdesign)
+- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=tinaciousdesign.theme-tinaciousdesign) (has rainbow JSON)
 - [Zed](https://gist.github.com/tinacious/dbdf82337ee6b461f438c6eb56ccb7b6)
 - [Jetbrains](https://github.com/tinacious/jetbrains-tinacious-design-theme)
 - [XCode](https://github.com/tinacious/tinacious-xcode-color-theme)
