@@ -11,6 +11,7 @@
   - [Light mode](#light-mode)
   - [External link support](#external-link-support)
   - [OpenAPI link support](#openapi-link-support)
+- [Installation](#installation)
 - [Development](#development)
 
 
@@ -66,6 +67,11 @@ If you like this extension, you might like my code editor themes:
 ### OpenAPI link support
 
 ![](./screenshots/links-openapi.png)
+
+
+## Installation
+
+Clone and build locally or download from one of the [workflow runs](https://github.com/tinacious/rainbow-json-chrome/actions/workflows/package.yml).
 
 
 ## Development
