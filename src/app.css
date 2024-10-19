@@ -13,7 +13,7 @@
 
 body {
   font-size: 100%;
-  font-family: 'IBM Plex Mono', 'Source Code Pro', 'Cascadia Code', 'MonoLisa', 'Consolas', monospace;
+  font-family: 'IBM Plex Mono', 'JetBrains Mono', 'SF Mono', 'Source Code Pro', 'Cascadia Code', 'MonoLisa', 'Go Mono', 'Consolas', Monaco, Menlo, courier, monospace;
   /* @apply bg-td_grey_1250 dark:bg-td_grey_100 text-black dark:text-white; */
 
   @apply text-td_grey_100 dark:text-td_grey_1250;
