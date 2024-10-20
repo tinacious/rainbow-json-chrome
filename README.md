@@ -24,6 +24,7 @@ The extension uses the document's content type to decide if it should style the 
 - 🌈 **Rainbow JSON**: Each level of JSON properties are a different colour to help with readability
 - 🌝🌚 **Dark/Light mode**: Automatic light and dark mode detection that uses your operating system's default
 - 🪗 **Show/Hide**: Expand or collapse sections of JSON
+- 📋 **Copy raw JSON**: Copy button allows you to copy the raw JSON to your clipboard
 - 🔗 **Link support**: Supports external links as well as internal links for OpenAPI specs
 - 🚛 **Big JSON**: Handles large JSON ([example 1](https://jsonplaceholder.typicode.com/photos), [example 2](https://api.apis.guru/v2/specs/amadeus.com/2.2.0/openapi.json), [example with links](https://api.apis.guru/v2/specs/apisetu.gov.in/ditarunachal/3.0.0/openapi.json))
 
@@ -46,7 +47,7 @@ If you like this extension, you might like my code editor themes:
 - [Vite](https://vite.dev/)
 - [Tailwind CSS](https://tailwindcss.com)
 - [postcss](https://postcss.org/)
-- Ionicons 5 SVG icons ([icons](https://ionic.io/ionicons) using [react-icons Figma plugin](https://www.figma.com/community/plugin/921172243620367846/import-react-icons))
+- [Ionicons](https://ionic.io/ionicons) and [Grommet icons](https://icons.grommet.io/) using [react-icons Figma plugin](https://www.figma.com/community/plugin/921172243620367846/import-react-icons))
 - [Figma](https://www.figma.com/)
 - [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) is the font used
 
