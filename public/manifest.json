@@ -31,8 +31,5 @@
       ]
     }
   ],
-  "host_permissions": [
-    "*://*/*"
-  ],
   "permissions": []
 }

@@ -11,6 +11,7 @@ export default defineConfig({
     emptyOutDir: false,
     outDir: 'rainbow-json-chrome',
     sourcemap: 'inline',
+    minify: false,
 
     rollupOptions: {
       input: resolve(__dirname, './src/content-script.ts'),
