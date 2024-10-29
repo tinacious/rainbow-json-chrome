@@ -81,7 +81,7 @@
     {/if}
   </div>
 
-  <div style="height: {open ? 'auto' : '0px'}" class="overflow-hidden">
+  <div style="height: {open ? 'auto' : '0px'}" class="{open ? '' : 'overflow-hidden'}">
     {#if Array.isArray(data)}
       {#each data as item, i}
         <svelte:self
