@@ -3,7 +3,7 @@
   "name": "Rainbow JSON Viewer",
   "manifest_version": 3,
   "description": "Making JSON easier to read in the browser",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icons": {
     "16": "logo-rainbow-json@16px.png",
     "32": "logo-rainbow-json@32px.png",
