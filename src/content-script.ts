@@ -1,5 +1,15 @@
 const isJsonDocument = (): boolean => {
-  return document.contentType.includes('application/json')
+  if (document.contentType.includes('application/json')) {
+    return true
+  }
+
+  try {
+    JSON.parse(document.body.innerText)
+    return true
+  } catch (e) {
+  }
+
+  return false
 }
 
 const injectJsonViewer = () => {
