@@ -10,7 +10,7 @@ export default defineConfig({
   build: {
     emptyOutDir: false,
     outDir: 'rainbow-json-chrome',
-    sourcemap: 'inline',
+    sourcemap: true,
     minify: false,
 
     rollupOptions: {
