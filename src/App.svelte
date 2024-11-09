@@ -13,7 +13,7 @@
 
     <div class="fixed top-4 right-4">
       <button
-        class="flex gap-1 items-center border backdrop-blur-sm border-td_grey_1100 dark:border-td_grey_500 hover:bg-white/50 dark:hover:bg-td_grey_500/50 dark:active:bg-td_grey_500/70 active:bg-white/70 rounded-md py-1 px-3"
+        class="btn"
         on:click={() => {
           copyTextToClipboard(JSON.stringify(jsonObject, null, 2), () => {
             showCheck = true;

@@ -197,3 +197,11 @@ body {
 .prop-level-35 {
   @apply text-[#59D065];
 }
+
+.divider {
+  @apply h-[1px] border-0 bg-td_grey_1100 dark:bg-td_grey_500;
+}
+
+.btn {
+  @apply flex gap-1 items-center border backdrop-blur-sm border-td_grey_1100 dark:border-td_grey_500 hover:bg-white/50 dark:hover:bg-td_grey_500/50 dark:active:bg-td_grey_500/70 active:bg-white/70 rounded-md py-1 px-3;
+}

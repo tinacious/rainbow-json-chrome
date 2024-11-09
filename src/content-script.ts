@@ -1,3 +1,5 @@
+import { getIgnoreList } from "./lib/storage"
+
 const isJsonDocument = (): boolean => {
   if (document.contentType.includes('application/json')) {
     return true
@@ -32,10 +34,19 @@ const injectJsonViewer = () => {
   document.body.appendChild(scriptTag)
 }
 
-const perform = () => {
+const perform = async () => {
   if (!isJsonDocument()) return
 
-  injectJsonViewer()
+  try {
+    const ignorelist = await getIgnoreList()
+
+    const found = ignorelist.find((item) => item === location.href)
+    if (found) return
+
+    injectJsonViewer()
+  } catch (e) {
+    console.warn('[Rainbow JSON] could not load ignorelist', e)
+  }
 }
 
 
