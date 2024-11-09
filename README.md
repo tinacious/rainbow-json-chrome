@@ -24,9 +24,9 @@ The extension uses the document's content type to decide if it should style the 
 - 🌈 **Rainbow JSON**: Each level of JSON properties are a different colour to help with readability
 - 🌝🌚 **Dark/Light mode**: Automatic light and dark mode detection that uses your operating system's default
 - 🪗 **Show/Hide**: Expand or collapse sections of JSON
-- 📋 **Copy raw JSON**: Copy button allows you to copy the raw JSON to your clipboard
 - 🔗 **Link support**: Supports external links as well as internal links for OpenAPI specs
-- 🚛 **Big JSON**: Handles large JSON ([example 1](https://jsonplaceholder.typicode.com/photos), [example 2](https://api.apis.guru/v2/specs/amadeus.com/2.2.0/openapi.json), [example with links](https://api.apis.guru/v2/specs/apisetu.gov.in/ditarunachal/3.0.0/openapi.json))
+- 📋 **Copy raw JSON**: Copy button allows you to copy the raw JSON to your clipboard
+- ⛔️ **Ignorelist**: Add URLs to an ignore list to prevent the extension from running on those URLs
 
 ## Related themes
 
