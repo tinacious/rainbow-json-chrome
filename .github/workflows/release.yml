@@ -1,4 +1,4 @@
-name: Package Chrome extension
+name: Release Chrome extension
 
 on:
   push:
@@ -13,6 +13,7 @@ jobs:
       - name: Build
         run:
           npm ci;
+          npm run version;
           npm run build;
           zip -r rainbow-json.zip rainbow-json-chrome/*;
       - name: Release

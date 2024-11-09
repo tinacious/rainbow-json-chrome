@@ -10,6 +10,7 @@
     "build:content": "vite build -c vite.config-content.js",
     "build:clean-manifest": "node scripts/clean_manifest.cjs",
     "preview": "vite preview",
+    "version": "node scripts/version.cjs",
     "zip": "zip rainbow-json.zip rainbow-json-chrome/*",
     "check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
   },
