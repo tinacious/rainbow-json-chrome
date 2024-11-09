@@ -15,7 +15,7 @@ jobs:
           npm ci;
           npm run version;
           npm run build;
-          zip -r rainbow-json.zip rainbow-json-chrome/*;
+          (cd rainbow-json-chrome && zip -r ../rainbow-json.zip .);
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
