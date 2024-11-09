@@ -10,6 +10,13 @@
     "48": "logo-rainbow-json@48px.png",
     "128": "logo-rainbow-json@128px.png"
   },
+  "options_ui": {
+    "open_in_tab": true,
+    "page": "options.html"
+  },
+  "background": {
+    "service_worker": "background-script.js"
+  },
   "web_accessible_resources": [
     {
       "resources": [
@@ -31,5 +38,7 @@
       ]
     }
   ],
-  "permissions": []
+  "permissions": [
+    "storage"
+  ]
 }

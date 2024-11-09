@@ -5,9 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 5090 -c vite.config-content.js",
-    "build": "rm -rf rainbow-json-chrome && npm run build:content && npm run build:main && npm run build:clean-manifest",
+    "dev:options": "vite --port 5090 -c vite.config-options.js",
+    "build": "rm -rf rainbow-json-chrome && npm run build:content && npm run build:background && npm run build:options && npm run build:main && npm run build:clean-manifest",
     "build:main": "vite build -c vite.config-main.js",
+    "build:background": "vite build -c vite.config-background.js",
     "build:content": "vite build -c vite.config-content.js",
+    "build:options": "vite build -c vite.config-options.js",
     "build:clean-manifest": "node scripts/clean_manifest.cjs",
     "preview": "vite preview",
     "version": "node scripts/version.cjs",
